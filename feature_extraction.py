@@ -35,7 +35,11 @@ def extract_pcap_summary(pcap_file):
 
 
 # Load the LLM (zero-shot attack detection)
-model_pipeline = pipeline("text-generation", model="mistralai/Mistral-7B-Instruct")
+model_pipeline = pipeline(
+    "text-generation",
+    model="mistralai/Mistral-7B-Instruct",
+    use_auth_token="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",
+)
 
 
 def split_pcap_into_batches(pcap_file, batch_size=100):
