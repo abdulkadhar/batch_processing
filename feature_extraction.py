@@ -38,7 +38,7 @@ def extract_pcap_summary(pcap_file):
 model_pipeline = pipeline(
     "text-generation",
     model="mistralai/Mistral-7B-Instruct-v0.2",
-    token="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",
+    token="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",
 )
 
 
